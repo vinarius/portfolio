@@ -7,9 +7,9 @@ const app = express();
 app.get('*', (req, res) => {
     const obj = {
         '__dirname': fs.readdirSync(__dirname),
-        'Interface': fs.readdirSync(__dirname + '/Interface'),
-        'dist': fs.readdirSync(__dirname + '/Interface/dist'),
-        'Portfolio': fs.readdirSync(__dirname + '/Interface/dist/Portfolio')
+        'Interface': fs.readdirSync(__dirname + '/Interface')
+        // 'dist': fs.readdirSync(__dirname + '/Interface/dist'),
+        // 'Portfolio': fs.readdirSync(__dirname + '/Interface/dist/Portfolio')
     };
     res.send(obj);
     // res.sendFile(__dirname + '/Interface/dist/Portfolio/index.html');
