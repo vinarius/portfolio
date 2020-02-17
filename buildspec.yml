@@ -12,6 +12,4 @@ phases:
       - ng b --prod
 artifacts:
   files:
-      - '/'
-  discard-paths: yes
-  base-directory: 'dist*'
+      - dist/**/*
