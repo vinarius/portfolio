@@ -11,6 +11,3 @@ phases:
     commands:
       - cd Interface
       - ng b --prod
-artifacts:
-files:
-    - dist/**/*
