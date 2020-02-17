@@ -6,9 +6,12 @@ phases:
       nodejs: 12
     commands:
         - pwd
+        - ls
         - npm i -g @angular/cli
   build:
     commands:
       - cd Interface
+      - pwd
+      - ls
       - ng b --prod
       - pwd
