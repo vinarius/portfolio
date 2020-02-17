@@ -5,11 +5,11 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - npm i -g @angular/cli
-      - npm i @angular-devkit/build-angular
-      - npm i @angular/compiler-cli
-      - npm i @angular/compiler
-      - npm i @angular/core
+        - npm i @angular-devkit/build-angular
+        - npm i @angular/compiler-cli
+        - npm i @angular/compiler
+        - npm i @angular/core
+        - npm i -g @angular/cli
   build:
     commands:
       - cd Interface
