@@ -7,6 +7,7 @@ phases:
     commands:
         - cd Interface
         - npm i
+        - npm i -g @angular/cli
   build:
     commands:
       - ng b --prod
