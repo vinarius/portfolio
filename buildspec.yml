@@ -5,8 +5,12 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - echo "Installing node 12"
+      - echo "Installing node 12 and angular"
+      - npm i -g @angular/cli
   build:
     commands:
       - cd Interface
       - ng b --prod
+artifacts:
+files:
+    - dist/**/*
