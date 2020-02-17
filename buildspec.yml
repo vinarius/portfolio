@@ -3,9 +3,9 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 12.8.1
+      nodejs: 12
     commands:
-      - echo "Installing node 12.8.1"
+      - echo "Installing node 12"
   build:
     commands:
       - cd Interface
