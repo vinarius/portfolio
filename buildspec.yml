@@ -9,6 +9,7 @@ phases:
       - npm i -g @angular/cli
       - npm i @angular-devkit/build-angular
       - npm i @angular/compiler-cli
+      - npm i @angular/compiler
   build:
     commands:
       - cd Interface
