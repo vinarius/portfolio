@@ -7,6 +7,7 @@ phases:
     commands:
       - echo "Installing node 12 and angular"
       - npm i -g @angular/cli
+      - npm i @angular-devkit/build-angular
   build:
     commands:
       - cd Interface
