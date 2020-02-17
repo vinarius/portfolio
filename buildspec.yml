@@ -10,3 +10,8 @@ phases:
     commands:
       - cd Interface
       - ng b --prod
+artifacts:
+  files:
+      - '/'
+  discard-paths: yes
+  base-directory: 'dist*'
