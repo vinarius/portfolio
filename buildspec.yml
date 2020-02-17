@@ -5,9 +5,10 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-        - cd Interface
-        - npm i
+        - pwd
         - npm i -g @angular/cli
   build:
     commands:
+      - cd Interface
       - ng b --prod
+      - pwd
