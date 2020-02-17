@@ -15,3 +15,10 @@ phases:
       - ls
       - ng b --prod
       - pwd
+      - ls
+      - cd dist
+      - pwd
+      - ls
+      - cd Portfolio
+      - pwd
+      - ls
