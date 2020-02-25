@@ -10,6 +10,7 @@ phases:
   build:
     commands:
       - cd Interface
+      - npm i
       - ng b --prod
 artifacts:
   files:
