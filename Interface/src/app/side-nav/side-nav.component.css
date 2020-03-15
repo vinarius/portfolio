@@ -1,0 +1,35 @@
+:host>>>.box-shadow {
+  -webkit-box-shadow: 8px 7px 5px -1px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 8px 7px 5px -1px rgba(204, 204, 204, 1);
+  box-shadow: 8px 7px 5px -1px rgba(204, 204, 204, 1);
+}
+
+:host>>>.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+:host>>>h4 {
+  margin: 0px 5px 0px 0px;
+}
+
+:host>>>h5 {
+  margin: 0px 5px 0px 0px;
+}
+
+:host>>>.light-text {
+  color: #777;
+  font-size: 12px;
+}
+
+:host>>>.margin-side-1 {
+  margin: 0px 0.5rem;
+}
+
+:host>>>.scroll-y {
+    overflow-y: auto;
+}
+
+:host>>>.space {
+    height: 10px;
+}

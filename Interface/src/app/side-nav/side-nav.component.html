@@ -1,7 +1,53 @@
-<p-sidebar [(visible)]="display">
-    <h1 style="font-weight:normal">Left Sidebar</h1>
-    <button pButton type="button" (click)="display = false" label="Save" class="ui-button-success"></button>
-    <button pButton type="button" (click)="display = false" label="Cancel" class="ui-button-secondary"></button>
+<p-sidebar [(visible)]="display" styleClass="scroll-y">
+    <div class="space"></div>
+    <p-card header="Profile" styleClass="box-shadow">
+        <div class="flexRow"><h4>Name:</h4><p class="light-text">Mark Kraus</p></div>
+        <div class="flexRow"><h4>Location:</h4><p class="light-text">Pennsylvania</p></div>
+        <div class="flexRow"><h4>Email:</h4><p class="light-text">[<a href="mailto:vindevccm@gmail.com">vindevccm@gmail.com</a>]</p></div>
+    </p-card>
+    <div class="space"></div>
+    <p-card header="Professional Statement" styleClass="box-shadow">
+        <p class="light-text">Detail oriented and highly adaptable professional with experience in the commercial and federal sectors developing, testing, and deploying software. Ability to leverage full stack expertise to build responsive and user-centered applications to deliver high quality impact.</p>
+    </p-card>
+    <div class="space"></div>
+    <p-card header="Skills" styleClass="box-shadow">
+        <h5>Client</h5>
+        <p class="light-text skills-text">
+            HTML, CSS, Bootstrap, SCSS, jQuery, Angular, D3.js
+        </p>
+        <h5>Server</h5>
+        <p class="light-text skills-text">
+            Node.js, Express.js
+        </p>
+        <h5>Database</h5>
+        <p class="light-text skills-text">
+            MongoDB, Mongoose.js, Sharepoint, SQL
+        </p>
+        <h5>Version Control</h5>
+        <p class="light-text skills-text">
+            Git
+        </p>
+        <h5>Tools</h5>
+        <p class="light-text skills-text">
+            Webpack, Babel, Typescript, Swagger, Angular CLI
+        </p>
+        <h5>Dev Ops</h5>
+        <p class="light-text skills-text">Docker, AWS</p>
+        <h5>Testing</h5>
+        <p class="light-text skills-text">Mocha.js, Chai.js, Sinon, Istanbul</p>
+        <h5>Delivery Methodologies</h5>
+        <p class="light-text skills-text">Agile, Waterfall</p>
+        <h5>Software</h5>
+        <p class="light-text skills-text">Visual Studio/Code, SQL Developer, MS Office, Github, Gitlab, Bitbucket, Mongo Compass, Jira, Agile Manager</p>
+        <h5>Operating Systems</h5>
+        <p class="light-text skills-text">Windows, Mac OS, Linux</p>
+    </p-card>
+    <br>
+    <p-card header="Follow Me" styleClass="box-shadow justify-center">
+        <a href="https://www.linkedin.com/in/mark-w-kraus/"><i class="fab fa-linkedin fa-3x margin-side-1"></i></a>
+        <a href="https://github.com/vinarius"><i class="fab fa-github fa-3x margin-side-1"></i></a>
+        <a href="https://www.twitch.tv/vin_dev"><i class="fab fa-twitch fa-3x margin-side-1"></i></a>
+    </p-card>
 </p-sidebar>
 
 <button pButton type="button" (click)="display = true" icon="pi pi-arrow-right"></button>
