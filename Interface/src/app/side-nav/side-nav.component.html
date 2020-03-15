@@ -1,0 +1,7 @@
+<p-sidebar [(visible)]="display">
+    <h1 style="font-weight:normal">Left Sidebar</h1>
+    <button pButton type="button" (click)="display = false" label="Save" class="ui-button-success"></button>
+    <button pButton type="button" (click)="display = false" label="Cancel" class="ui-button-secondary"></button>
+</p-sidebar>
+
+<button pButton type="button" (click)="display = true" icon="pi pi-arrow-right"></button>
