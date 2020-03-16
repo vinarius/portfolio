@@ -1,20 +1,13 @@
+:host>>>hr {
+    margin: 0px;
+    padding: 0px;
+}
+
 :host>>>.navbar {
     height: 50px;
     width: 100%;
-    background-color: #333;
-    color: #fff;
 }
 
 :host>>>.navlink {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-self: start;
-    margin-left: 1rem;
-    width: 90px;
-}
-
-:host>>>.navlink:hover {
-    color: rgb(172, 172, 255);
-    cursor: pointer;
+    margin: 12.5px 0px 12.5px 1rem;
 }
