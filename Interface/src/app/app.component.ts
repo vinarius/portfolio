@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+  clientHeight: number;
+
+  constructor() {
+    this.clientHeight = window.innerHeight;
+  }
+
+  onResize(event: Event) {
+    this.clientHeight = window.innerHeight;
+  }
+
 }

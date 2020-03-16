@@ -11,6 +11,7 @@
     align-items: center;
     justify-self: start;
     margin-left: 1rem;
+    width: 90px;
 }
 
 :host>>>.navlink:hover {
