@@ -12,10 +12,10 @@ export class TabMenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.items = [
-      {label: 'Front End', icon: 'fab fa-html5 fa-2x'},
-      {label: 'Data Visualizations', icon: 'fab fa-js fa-2x'},
-      {label: 'Microservices', icon: 'fab fa-node-js fa-2x'},
-      {label: 'Full Stack', icon: 'fas fa-database fa-2x'}
+      {label: 'Front End', icon: 'fab fa-html5 fa-2x', routerLink: 'frontend'},
+      {label: 'Data Visualizations', icon: 'fab fa-js fa-2x', routerLink: 'datavis'},
+      {label: 'Microservices', icon: 'fab fa-node-js fa-2x', routerLink: 'microservices'},
+      {label: 'Full Stack', icon: 'fas fa-database fa-2x', routerLink: 'fullstack'}
     ];
   }
 
