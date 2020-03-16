@@ -1,7 +1,7 @@
 <!-- Control window size to ensure proper footer placement -->
 <div [ngStyle]="{'min-height': clientHeight + 'px', 'margin-bottom': '-50px'}" (window:resize)="onResize($event)">
     <app-navbar></app-navbar>
+    <app-tab-menu></app-tab-menu>
     <router-outlet></router-outlet>
-    <div style="height: 200px;"></div>
 </div>
 <app-footer></app-footer>

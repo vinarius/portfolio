@@ -4,20 +4,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { SidebarModule } from 'primeng/sidebar';
+import { TabMenuModule } from 'primeng/tabmenu';
 import { TooltipModule } from 'primeng/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
-import { FooterComponent } from './footer/footer.component';
+import { TabMenuComponent } from './tab-menu/tab-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideNavComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    TabMenuComponent
   ],
   imports: [
     AppRoutingModule,
@@ -26,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
     ButtonModule,
     CardModule,
     SidebarModule,
+    TabMenuModule,
     TooltipModule
   ],
   providers: [],
