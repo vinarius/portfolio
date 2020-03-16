@@ -1,9 +1,9 @@
 <p-sidebar [(visible)]="display" styleClass="scroll-y">
     <div class="space"></div>
     <p-card header="Profile" styleClass="box-shadow">
-        <div class="flexRow"><h4>Name:</h4><p class="light-text">Mark Kraus</p></div>
-        <div class="flexRow"><h4>Location:</h4><p class="light-text">Pennsylvania</p></div>
-        <div class="flexRow"><h4>Email:</h4><p class="light-text">[<a href="mailto:vindevccm@gmail.com">vindevccm@gmail.com</a>]</p></div>
+        <div class="flex-row"><h4>Name:</h4><p class="light-text">Mark Kraus</p></div>
+        <div class="flex-row"><h4>Location:</h4><p class="light-text">Pennsylvania</p></div>
+        <div class="flex-row"><h4>Email:</h4><p class="light-text">[<a href="mailto:vindevccm@gmail.com">vindevccm@gmail.com</a>]</p></div>
     </p-card>
     <div class="space"></div>
     <p-card header="Professional Statement" styleClass="box-shadow">
@@ -43,11 +43,12 @@
         <p class="light-text skills-text">Windows, Mac OS, Linux</p>
     </p-card>
     <br>
-    <p-card header="Follow Me" styleClass="box-shadow justify-center">
-        <a href="https://www.linkedin.com/in/mark-w-kraus/"><i class="fab fa-linkedin fa-3x margin-side-1"></i></a>
-        <a href="https://github.com/vinarius"><i class="fab fa-github fa-3x margin-side-1"></i></a>
-        <a href="https://www.twitch.tv/vin_dev"><i class="fab fa-twitch fa-3x margin-side-1"></i></a>
+    <p-card header="Follow Me" styleClass="box-shadow">
+        <a href="https://linkedin.com/in/mark-w-kraus/" tooltipPosition="right" pTooltip="Linked-In"><i class="fab fa-linkedin fa-3x margin-side-1"></i></a>
+        <a href="https://github.com/vinarius" tooltipPosition="right" pTooltip="Github"><i class="fab fa-github fa-3x margin-side-1"></i></a>
+        <a href="https://twitch.tv/vin_dev" tooltipPosition="right" pTooltip="Twitch"><i class="fab fa-twitch fa-3x margin-side-1"></i></a>
+        <a href="assets/Files/Mark-Kraus-Resume.pdf" download="Mark-Kraus-Resume" tooltipPosition="right" pTooltip="Résumé"><i class="fas fa-file fa-3x"></i></a>
     </p-card>
 </p-sidebar>
 
-<button pButton type="button" (click)="display = true" icon="pi pi-arrow-right"></button>
+<div (click)="display = true" class="navlink">Mark Kraus</div>

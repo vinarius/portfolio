@@ -4,7 +4,7 @@
   box-shadow: 8px 7px 5px -1px rgba(204, 204, 204, 1);
 }
 
-:host>>>.flexRow {
+:host>>>.flex-row {
   display: flex;
   flex-direction: row;
 }
