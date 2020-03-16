@@ -18,11 +18,11 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     NavbarComponent
   ],
   imports: [
-    ButtonModule,
-    BrowserModule,
-    CardModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    BrowserModule,
+    ButtonModule,
+    CardModule,
     SidebarModule,
     TooltipModule
   ],
