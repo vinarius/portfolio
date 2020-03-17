@@ -17,8 +17,8 @@ import { FrontendComponent } from './Components/projects/frontend/frontend.compo
 import { DatavisComponent } from './Components/projects/datavis/datavis.component';
 import { MicroservicesComponent } from './Components/projects/microservices/microservices.component';
 import { FullstackComponent } from './Components/projects/fullstack/fullstack.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
+import { AboutMeComponent } from './Components/about-me/about-me.component';
 
 @NgModule({
   declarations: [
