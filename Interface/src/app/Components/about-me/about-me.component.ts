@@ -12,4 +12,10 @@ export class AboutMeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isShowingAboutMeDetails: boolean = false;
+
+  toggleViewDetails(): void {
+    this.isShowingAboutMeDetails = !this.isShowingAboutMeDetails;
+  }
+
 }

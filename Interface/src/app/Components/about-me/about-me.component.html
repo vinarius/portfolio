@@ -1,1 +1,117 @@
-<p>about-me works!</p>
+<h1>Experience</h1>
+<h5>VoiceFoundry - https://voicefoundry.com</h5>
+<p>AWS Cloud Engineer and Full Stack Developer - Remote</p>
+<p>June 2020 - Current</p>
+
+<p>As an engineer at VoiceFoundry, my role is primarily to deliver project work, as well as provide guidance as a
+  consultant to our clients on training & best practices for the solutions we deliver. I work to refine the process of
+  delivering projects by building internal tools, suggest new methods of designing & building a system, &provide
+  feedback to my team leads on issues. Additionally, I provide guidance to team members on industry best practices
+  during code reviews.</p>
+
+<div (click)="toggleViewDetails()">
+  <p *ngIf="!isShowingAboutMeDetails">More about what I do...</p>
+  <p *ngIf="isShowingAboutMeDetails">Less about what I do...</p>
+</div>
+
+<div *ngIf="isShowingAboutMeDetails">
+  <ul>
+    <li>Amazon Connect</li>
+    <ul>
+      <li>Setup & configure instances of Connect based on requirements</li>
+      <li>Integrate custom logic using lambda functions</li>
+      <li>Engineer contact flows based on designs</li>
+      <li>Custom CCP built with React</li>
+    </ul>
+
+    <li>Admin App</li>
+    <ul>
+      <li>Custom off-hours &holiday messaging for contact flows</li>
+      <li>Support multi-languagecontact flows with dynamic prompts</li>
+      <li>Maintain & deploy infrastructure resources with SAM</li>
+      <li>Capture prompts &hours info inan Angular UI</li>
+      <li>Process server logicwith Python lambdas</li>
+      <li>Store datain DynamoDB for retrieval from Connect</li>
+      <li>Encrypt resources at rest usingKMS</li>
+    </ul>
+
+    <li>Voicemail App</li>
+    <ul>
+      <li>Leave voicemails for a queueor individual agent</li>
+      <li>Maintain & deploy infrastructure resources with Serverless</li>
+      <li>Invoke Kinesisto capture audio shards in contact flow</li>
+      <li>Store .wav filesin an S3 bucket</li>
+      <li>Store recording metadatain DynamoDB</li>
+      <li>Process server logic withTypescript (Node.js)lambdas</li>
+      <li>Build UI with Angular</li>
+      <li>Encrypt resources at rest using KMS</li>
+      <li>Set time-to-live on audio recordings per client requirements</li>
+    </ul>
+
+    <li>Storage App</li>
+    <ul>
+      <li>Export Connect data using Kinesis &Firehose to an S3 bucket for import to a custom solution for robust
+        reporting &analysis</li>
+      <li>Maintain & deploy infrastructure resources with CDK</li>
+      <li>Encrypt resources at rest using KMS</li>
+    </ul>
+
+    <li>Operate within the Agile software development methodology</li>
+    <li>Manage sprint life cycle using JIRA</li>
+  </ul>
+
+
+  <h5>Deloitte Consulting - https://deloitte.com</h5>
+  <p>Full Stack Developer</p>
+  <p>July 2017 - June 2020</p>
+
+  <p>Using the Agile methodology, I contributed to a federal sector project. As a full stack JavaScript developer, I was
+    the sole contributor to an enterprise level analytics dashboard with custom charts created using D3.js, wrapped in
+    Angular, and Git for version control.
+
+    In addition to front end work, I built and maintained the back end using several node servers with MongoDB as the
+    database mechanism. This application was designed with a micro-services architecture, containerized using Docker,
+    and was planned for deployment to AWS within a DI2E environment.
+
+    I delivered quality assurance by implementing automated tests using Mocha.js and Chai.js, integrating into our CI/CD
+    pipeline (Jenkins). These tests ensured accurate delivery, eliminated unexpected bugs and failures, and reduced team
+    resources spent on QA.
+
+    Sprint planning, issue management, and retrospectives were conducted via JIRA.</p>
+
+  <h4>Full Stack Web Developer</h4>
+  <ul>
+    <li>Maintain an enterprise level analytics dashboard assisting the U.S. Department of Defense in managing military
+      assets</li>
+    <li>Build UI content in React and Angular</li>
+    <li>Construct custom data visualizations using D3.js</li>
+    <li>DevelopTypescript(Node.js) web servers&deploy to AWS</li>
+    <li>Develop in a micro-service architecture</li>
+    <li>Containerizeusing Docker</li>
+    <li>Implement MongoDB as thedatabase mechanism
+    <li>Operatewithin the Agile software development methodology</li>
+    <li>Manage sprint life cycle using JIRA</li>
+  </ul>
+
+  <h4>Release management Coordinator</h4>
+  <ul>
+    <li>Maintain the web applicationmanaging state benefits for citizens of the commonwealth of Pennsylvania</li>
+    <li>Manage package compilations, file drops, &build deployments to INT, SAT, UAT, TFP, &PROD environments</li>
+    <li>Ensure environment uptime so testing isnot impacted</li>
+    <li>Assist in E2E testing providing confidence toward daily deployments</li>
+    <li>Supervise builds from compilation to migration</li>
+    <li>Operatewithin the Waterfall software development methodology with six month deployment periods</li>
+  </ul>
+
+  <h5>Freelance Web Developer</h5>
+  <p>December 2016 - July 2017</p>
+
+  <ul>
+    <li>Develop a Node application for a custom tailoring business</li>
+    <li>Add HTTPS security&deliverresources securely</li>
+    <li>Deploy to a private VPS</li>
+    <li>Serveviews using the PUG template engine</li>
+    <li>Develop a JAM-stack application for an Italian restaurant</li>
+    <li>Brochure site including About, Menu, &Contact pages</li>
+  </ul>
+</div>
