@@ -6,6 +6,7 @@ import { CardModule } from 'primeng/card';
 import { SidebarModule } from 'primeng/sidebar';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { TooltipModule } from 'primeng/tooltip';
+import {ToggleButtonModule} from 'primeng/togglebutton';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,7 +43,8 @@ import { AboutMeComponent } from './Components/about-me/about-me.component';
     CardModule,
     SidebarModule,
     TabMenuModule,
-    TooltipModule
+    TooltipModule,
+    ToggleButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,6 +13,7 @@ export class AboutMeComponent implements OnInit {
   }
 
   isShowingAboutMeDetails: boolean = false;
+  isChecked: boolean = false;
 
   toggleViewDetails(): void {
     this.isShowingAboutMeDetails = !this.isShowingAboutMeDetails;
