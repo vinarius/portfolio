@@ -1,0 +1,167 @@
+:root {
+    font-family: 'Roboto Mono', monospace;
+    min-width: 320px;
+}
+
+#collapse-btn:hover {
+    curser: pointer;
+}
+
+#email {
+    font-size: 0.8em;
+    width: 275px;
+}
+
+footer {
+    width: 100%;
+    background-color: #444;
+    color: #fff;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.footerSubcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSubelement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+#header-img {
+    height: 25px;
+}
+
+.iconWidth {
+    width: 75px !important;
+}
+
+.instrument-subcontainer {
+    border: 1px solid #222;
+    border-radius: 5px;
+    height: 300px;
+    width: 250px;
+}
+
+.instrument-subcontainer-title {
+    background-color: #777;
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#listContainerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.listContainerRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.listDescription {
+    font-size: 0.9em;
+}
+
+.listTitle {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    color: #fff;
+}
+
+.navOption,
+.navOptionBrand {
+    background-color: inherit;
+    color: inherit;
+    border-radius: 5px;
+}
+
+.navOption:hover {
+    transition: color 0.3s, background-color 0.3s;
+    color: #444;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.spaceUnderNav {
+    height: 55px;
+}
+
+#submit {
+    width: 150px !important;
+}
+
+.subtitle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#trombone-description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#videoContainer {
+    width: 500px;
+    height: 300px;
+}
+
+#video {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+@media (max-width: 780px) {
+    footer {
+        font-size: 0.9em;
+    }
+    .instrument-subcontainer {
+        margin-bottom: 1rem;
+    }
+    #trombone-description-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navOptionBrand {
+        font-size: 0.95em;
+    }
+    #videoContainer {
+        width:300px;
+        height: 200px;
+    }
+    .smallFont {
+        font-size: 0.8em;
+    }
+}

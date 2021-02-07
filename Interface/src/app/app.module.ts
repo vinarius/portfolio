@@ -20,6 +20,13 @@ import { MicroservicesComponent } from './Components/projects/microservices/micr
 import { FullstackComponent } from './Components/projects/fullstack/fullstack.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { AboutMeComponent } from './Components/about-me/about-me.component';
+import { TributePageComponent } from './Components/projects/frontend/tribute-page/tribute-page.component';
+import { SurveyFormComponent } from './Components/projects/frontend/survey-form/survey-form.component';
+import { LandingPageComponent } from './Components/projects/frontend/landing-page/landing-page.component';
+import { TechnicalDocumentationComponent } from './Components/projects/frontend/technical-documentation/technical-documentation.component';
+import { MarkdownPreviewerComponent } from './Components/projects/frontend/markdown-previewer/markdown-previewer.component';
+import { VincenzosPlaceComponent } from './Components/projects/frontend/vincenzos-place/vincenzos-place.component';
+import { DrumMachineComponent } from './Components/projects/frontend/drum-machine/drum-machine.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +40,14 @@ import { AboutMeComponent } from './Components/about-me/about-me.component';
     SideNavComponent,
     TabMenuComponent,
     PageNotFoundComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    TributePageComponent,
+    SurveyFormComponent,
+    LandingPageComponent,
+    TechnicalDocumentationComponent,
+    MarkdownPreviewerComponent,
+    VincenzosPlaceComponent,
+    DrumMachineComponent
   ],
   imports: [
     AppRoutingModule,
