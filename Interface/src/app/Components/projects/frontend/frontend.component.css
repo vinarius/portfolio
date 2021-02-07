@@ -1,3 +1,8 @@
 .mt-3 {
     margin-top: 3rem;
 }
+
+.project-image {
+    height: 100px;
+    width: 100px;
+}
