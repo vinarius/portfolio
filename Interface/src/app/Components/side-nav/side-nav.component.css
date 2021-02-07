@@ -33,3 +33,11 @@
 :host>>>.space {
     height: 10px;
 }
+
+:host>>>.black {
+  color: black;
+}
+
+:host>>>.black:hover {
+  color: #555;
+}

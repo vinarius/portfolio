@@ -5,16 +5,11 @@
 
 <p>As an engineer at VoiceFoundry, my role is primarily to deliver project work, as well as provide guidance as a
   consultant to our clients on training & best practices for the solutions we deliver. I work to refine the process of
-  delivering projects by building internal tools, suggest new methods of designing & building a system, &provide
+  delivering projects by building internal tools, suggest new methods of designing & building a system, & provide
   feedback to my team leads on issues. Additionally, I provide guidance to team members on industry best practices
   during code reviews.</p>
 
-<p-toggleButton (click)="toggleViewDetails()" [(ngModel)]="isShowingAboutMeDetails" onLabel="Less about what I do..." offLabel="More about what I do..." [style]="{'width': '15em', 'margin-left': '3em'}"></p-toggleButton>
-
-<div >
-  <p *ngIf="!isShowingAboutMeDetails"></p>
-  <p *ngIf="isShowingAboutMeDetails"></p>
-</div>
+<p-toggleButton (click)="toggleViewDetails()" onLabel="Less about what I do..." offLabel="More about what I do..." [style]="{'width': '15em', 'margin-left': '3em'}"></p-toggleButton>
 
 <div *ngIf="isShowingAboutMeDetails">
   <ul>
