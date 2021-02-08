@@ -7,6 +7,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { TooltipModule } from 'primeng/tooltip';
 import {ToggleButtonModule} from 'primeng/togglebutton';
+import {DialogModule} from 'primeng/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -55,6 +56,7 @@ import { DrumMachineComponent } from './Components/projects/frontend/drum-machin
     BrowserModule,
     ButtonModule,
     CardModule,
+    DialogModule,
     SidebarModule,
     TabMenuModule,
     TooltipModule,
