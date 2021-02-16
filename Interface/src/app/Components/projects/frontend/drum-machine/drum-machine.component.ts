@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-drum-machine',
@@ -8,15 +8,22 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class DrumMachineComponent implements OnInit {
 
+  @Input('displayMaximizable') displayMaximizable: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  displayMaximizable: boolean;
+  ngOnChanges(changes: SimpleChanges): void {
+    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
+    //Add '${implements OnChanges}' to the class.
+    console.log('changes:', changes);
+    console.log('displayMax:', this.displayMaximizable);
+  }
 
   showMaximizableDialog() {
-    this.displayMaximizable = true;
+    console.log('this.displayMaximizable:', this.displayMaximizable);
   }
 
 }

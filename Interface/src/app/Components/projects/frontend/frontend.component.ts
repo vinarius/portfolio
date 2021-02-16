@@ -12,4 +12,10 @@ export class FrontendComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  displayMax: boolean = false;
+
+  toggleMaximizable() {
+    this.displayMax = true;
+  }
+
 }

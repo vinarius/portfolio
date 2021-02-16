@@ -1,5 +1,5 @@
-<p-button (click)="showMaximizableDialog()" icon="pi pi-external-link" label="Show"></p-button>
-<p-dialog header="Drum Machine" dismissableMask="true" [(visible)]="displayMaximizable" [modal]="true" [style]="{'width': '75vw'}" [maximizable]="true" [baseZIndex]="10000"
+<!-- <p-button (click)="showMaximizableDialog()" icon="pi pi-external-link" label="Show"></p-button> -->
+<p-dialog header="Drum Machine" dismissableMask="true" [(visible)]="displayMaximizable" [modal]="true" [style]="{'width': '75vw', 'height': '75vh' }" [contentStyle]="{'height': '75vh' }" [maximizable]="true" [baseZIndex]="10000"
     [draggable]="false" [resizable]="false">
     <iframe frameborder="0" style="height: 100%; width: 100%;" srcdoc="<!doctype html><html lang=&quot;en&quot;><head><meta charset=&quot;utf-8&quot;/><link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;/><meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;/><meta name=&quot;theme-color&quot; content=&quot;#000000&quot;/><meta name=&quot;description&quot; content=&quot;Web site created using create-react-app&quot;/><link rel=&quot;apple-touch-icon&quot; href=&quot;/logo192.png&quot;/><link rel=&quot;manifest&quot; href=&quot;/manifest.json&quot;/><style>@font-face {
       font-family: 'Baloo Bhaina 2';

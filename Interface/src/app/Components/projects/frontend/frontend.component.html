@@ -36,9 +36,10 @@
         </a>
     </p-card>
     <p-card id="drum-machine">
-        <a routerLink="/frontend/projects/drummachine" routerLinkActive="active">
+        <div (click)="toggleMaximizable()">
         Drum Machine
         <img class="project-image" src="../../../../assets/Images/frontend-images/" />
-        </a>
+        <app-drum-machine [displayMaximizable]="displayMax"></app-drum-machine>
+        </div>
     </p-card>
 </div>
