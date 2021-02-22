@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./frontend.component.css']
 })
 export class FrontendComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
