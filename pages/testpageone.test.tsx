@@ -7,9 +7,8 @@ describe('<TestPageOne />', ()=>{
   it('should render a p element with text in it', ()=>{
     const component = renderer.create(
       <TestPageOne />
-    );
+    ).toJSON();
 
-    console.log('component.toJSON():', component.toJSON());
-    console.log('component.toTree():', component.toTree());
+    expect(component).toMatchSnapshot();
   });
 });
