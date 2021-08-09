@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Testing = () => {
+const FirstBlog = () => {
   return (
     <>
       <p>My test page component is working!</p>
@@ -8,4 +8,4 @@ const Testing = () => {
   );
 };
 
-export default Testing;
+export default FirstBlog;
