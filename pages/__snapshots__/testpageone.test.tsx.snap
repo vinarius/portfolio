@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<TestPageOne /> should render a p element with text in it 1`] = `
-<p>
-  Test page one is working
-</p>
-`;
