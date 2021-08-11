@@ -1,9 +1,9 @@
-import React, { Fragment, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import { XIcon } from '@heroicons/react/outline'
+import React, { Fragment, useState, ReactElement } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { XIcon } from '@heroicons/react/outline';
 
-export default function Overlay() {
-  const [open, setOpen] = useState(false)
+export default function Overlay(): ReactElement {
+  const [open, setOpen] = useState(false);
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -68,5 +68,5 @@ export default function Overlay() {
         </div>
       </Dialog>
     </Transition.Root>
-  )
+  );
 }

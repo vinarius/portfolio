@@ -1,21 +1,19 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import Image from 'next/image';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import React, { Fragment, ReactElement } from 'react';
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Team', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-]
+  { name: 'Calendar', href: '#', current: false }
+];
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
-export default function Example() {
+export default function Navbar(): ReactElement {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -149,5 +147,5 @@ export default function Example() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }
