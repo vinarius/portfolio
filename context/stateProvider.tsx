@@ -1,30 +1,31 @@
-import React, { createContext, ReactElement, useReducer } from 'react';
+import React, {
+  createContext,
+  useReducer,
+  PropsWithChildren,
+  Reducer,
+  Dispatch
+} from 'react';
 import reducer from './reducer';
-import DefaultState, { State } from './defaultState';
-import { STATEACTIONS } from './stateActions';
+import DefaultState from './defaultState';
 
-const Context = createContext<State|null>(null);
+function createCtx<StateType, ActionType>(
+  reducer: Reducer<StateType, ActionType>,
+  initialState: StateType
+) {
+  const defaultDispatch: Dispatch<ActionType> = () => initialState;
+  const context = createContext({
+    state: initialState,
+    dispatch: defaultDispatch
+  });
+  function Provider(props: PropsWithChildren<unknown>){
+    const [state, dispatch] = useReducer<Reducer<StateType, ActionType>>(reducer, initialState);
+    return <context.Provider value={{ state, dispatch }} {...props} />;
+  }
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any
-const StateProvider = (props: any): ReactElement => {
-  const [state, dispatch] = useReducer(reducer, DefaultState);
+  return [context, Provider] as const;
+}
 
-  const toggleNavbar = () => {
-    dispatch({
-      type: STATEACTIONS.toggleNavbar
-    });
-  };
+const [context, ContextProvider] = createCtx(reducer, DefaultState);
 
-  const providerValue = {
-    ...state,
-    toggleNavbar
-  };
-
-  return (
-    <Context.Provider value={providerValue}>
-      {props.children}
-    </Context.Provider>
-  );
-};
-
-export default StateProvider;
+export const myContext = context;
+export const MyProvider = ContextProvider;

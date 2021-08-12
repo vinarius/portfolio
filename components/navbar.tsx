@@ -1,6 +1,9 @@
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
-import React, { Fragment, ReactElement } from 'react';
+import { Disclosure, Menu } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import React, { ReactElement, useContext } from 'react';
+
+import { STATEACTIONS } from '../context/stateActions';
+import { myContext } from '../context/stateProvider';
 
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
@@ -14,11 +17,25 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar(): ReactElement {
+  const {state, dispatch} = useContext(myContext);
+  const {isOverlayOpen} = state;
+
+  const handleOpenOverlay = () => {
+    console.log('fired');
+    if (isOverlayOpen) {
+      dispatch({type: STATEACTIONS.closeOverlay});
+    } else {
+      dispatch({type: STATEACTIONS.openOverlay});
+    }
+  };
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8"
+            onClick={handleOpenOverlay}
+          >
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -62,7 +79,9 @@ export default function Navbar(): ReactElement {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div
+                className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+              >
 
                 {/* Profile dropdown */}
                 <Menu as="div" className="ml-3 relative">

@@ -1,13 +1,17 @@
-import React, { Fragment, useState, ReactElement } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
+import React, { Fragment, ReactElement, useContext } from 'react';
+
+import { STATEACTIONS } from '../context/stateActions';
+import { myContext } from '../context/stateProvider';
 
 export default function Overlay(): ReactElement {
-  const [open, setOpen] = useState(true);
+  const {state, dispatch} = useContext(myContext);
+  const {isOverlayOpen} = state;
 
   return (
-    <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" auto-reopen="true" className="fixed inset-0 overflow-hidden" onClose={setOpen}>
+    <Transition.Root show={isOverlayOpen} as={Fragment}>
+      <Dialog as="div" auto-reopen="true" className="fixed inset-0 overflow-hidden" onClose={()=>{dispatch({type: STATEACTIONS.closeOverlay});}}>
         <div className="absolute inset-0 overflow-hidden">
           <Transition.Child
             as={Fragment}
@@ -43,7 +47,7 @@ export default function Overlay(): ReactElement {
                   <div className="absolute top-0 left-0 -ml-8 pt-4 pr-2 flex sm:-ml-10 sm:pr-4">
                     <button
                       className="rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
-                      onClick={() => setOpen(false)}
+                      onClick={() => dispatch({type: STATEACTIONS.closeOverlay})}
                     >
                       <span className="sr-only">Close panel</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />

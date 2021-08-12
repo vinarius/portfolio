@@ -8,16 +8,22 @@ export interface Action {
 
 const reducer = (state: State, action: Action): State => {
   switch(action.type) {
-    case STATEACTIONS.toggleNavbar:
-      return toggleNavbar(state);
+    case STATEACTIONS.openOverlay:
+      return openOverlay(state);
     default:
-      return state;
+    case STATEACTIONS.closeOverlay:
+      return closeOverlay(state);
   }
 };
 
-const toggleNavbar = (state: State): State => ({
+const openOverlay = (state: State): State => ({
   ...state,
-  isNavbarOpen: !state.isNavbarOpen
+  isOverlayOpen: true
+});
+
+const closeOverlay = (state: State): State => ({
+  ...state,
+  isOverlayOpen: false
 });
 
 export default reducer;

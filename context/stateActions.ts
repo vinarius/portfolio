@@ -1,3 +1,4 @@
 export enum STATEACTIONS {
-  toggleNavbar = 'toggleNavbar'
+  openOverlay = 'openOverlay',
+  closeOverlay = 'closeOverlay'
 }

@@ -1,9 +1,9 @@
 export interface State {
-  isNavbarOpen: boolean;
+  isOverlayOpen: boolean;
 }
 
 const DefaultState: State = {
-  isNavbarOpen: false
+  isOverlayOpen: false
 };
 
 export default DefaultState;
