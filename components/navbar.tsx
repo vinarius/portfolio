@@ -14,7 +14,7 @@ export default function Navbar(): ReactElement {
   const { isOverlayOpen } = state;
 
   const [navigation, setNavigation] = useState([
-    { name: 'About Me', href: '#', current: true },
+    { name: 'Experience', href: '#', current: true },
     { name: 'Portfolio', href: '#', current: false },
     { name: 'Contact Me', href: '#', current: false }
   ]);
@@ -27,6 +27,7 @@ export default function Navbar(): ReactElement {
     }
   };
 
+  // TODO: update on scroll
   function setNavigationCurrent(index: number): void {
     setNavigation(
       navigation.map((val, ix) => {
@@ -59,6 +60,7 @@ export default function Navbar(): ReactElement {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-start sm:items-stretch">
+                <p className="text-white hidden sm:flex items-center sm:text-xl md:text-2xl">Mark Kraus</p>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item, index) => (
@@ -68,7 +70,7 @@ export default function Navbar(): ReactElement {
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
-                        )}
+                        ) + 'transition-all'}
                         aria-current={item.current ? 'page' : undefined}
                         onClick={() => setNavigationCurrent(index)}
                       >
@@ -79,7 +81,7 @@ export default function Navbar(): ReactElement {
                 </div>
               </div>
               <div
-                className="absolute right-0 flex items-center mr-5 sm:static sm:inset-auto sm:pr-0 cursor-pointer rounded-md text-lg text-white hover:bg-gray-300 hover:text-black transition-all"
+                className="absolute right-0 flex items-center mr-5 sm:static sm:inset-auto p-1 cursor-pointer rounded-md text-lg text-white hover:bg-gray-700 transition-all"
                 onClick={handleOpenOverlay}
               >
                 <p className="mx-4">My Skills</p>

@@ -10,6 +10,7 @@
     "test": "jest --coverage"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@headlessui/react": "^1.4.0",
     "@heroicons/react": "^1.0.3",
     "next": "11.1.0",
