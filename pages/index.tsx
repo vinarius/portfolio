@@ -17,10 +17,15 @@ export default function Home(): ReactElement {
               <h3 className="font-bold">VoiceFoundry <a className="font-medium text-blue-600 hover:text-blue-400" target="_blank" href="https://voicefoundry.com" rel="noreferrer">https://voicefoundry.com</a></h3>
               <p>June 2020 - Current</p>
             </div>
-            <p className="">AWS Cloud Engineer and Full Stack Developer</p>
+            <p>AWS Cloud Engineer and Full Stack Developer</p>
             <p className="my-5">As an engineer at VoiceFoundry, my role is primarily to deliver project work, as well as provide guidance as a consultant to our clients on training & best practices for the solutions we deliver. I work to refine the process of delivering projects by building internal tools, suggest new methods of designing & building a system, as well as provide feedback to my team leads on issues. Additionally, I provide guidance to junior team members on industry best practices during code reviews. My preferred language is Node/JavaScript using TypeScript but am also proficient in Python. I prefer AWS CDK for infrastructure as code.</p>
 
             <p className="my-10">TODO: Add button to hide/show VoiceFoundry details</p>
+
+            <div className="my-5">
+              <p>Operate within the Agile software development methodology</p>
+              <p>Manage sprint life cycle using Jira</p>
+            </div>
 
             <div className="my-5">
               <h4 className="italic">Amazon Connect</h4>
@@ -66,6 +71,60 @@ export default function Home(): ReactElement {
                 <li className="list-inside list-disc">Export Connect data using Kinesis & Firehose to an S3 bucket for custom reporting & analysis</li>
                 <li className="list-inside list-disc">Maintain & deploy infrastructure resources with AWS CDK</li>
                 <li className="list-inside list-disc">Encrypt resources at rest using KMS</li>
+              </ul>
+            </div>
+
+            <hr className="my-8 h-2" />
+
+            <div className="flex justify-between">
+              <h3 className="font-bold">Freelance Web Developer</h3>
+              <p>May 2021 - current</p>
+            </div>
+
+            <div className="my-5">
+              <h4 className="italic">Dwellics - <a className="font-medium text-blue-600 hover:text-blue-400" target="_blank" href="https://dwellics.com" rel="noreferrer">https://dwellics.com</a></h4>
+              <ul>
+                <li className="list-inside list-disc">Commerical application designed to assist citizens in relocating in the U.S.</li>
+                <li className="list-inside list-disc">Step into existing code base to maintain and make suggestions on technological improvements</li>
+                <li className="list-inside list-disc">Build UI content in React</li>
+                <li className="list-inside list-disc">Implement Nextjs adding codesplitting, prerendering for SEO optimization, and prefetching</li>
+                <li className="list-inside list-disc">Deploy to AWS using Amplify</li>
+                <li className="list-inside list-disc">Store user data in Amazon Cognito</li>
+                <li className="list-inside list-disc">Build new pages based on client requirements</li>
+              </ul>
+            </div>
+
+            <hr className="my-8 h-2" />
+
+            <div className="flex justify-between">
+              <h3 className="font-bold">Deloitte Consulting <a className="font-medium text-blue-600 hover:text-blue-400" target="_blank" href="https://deloitte.com" rel="noreferrer">https://deloitte.com</a></h3>
+              <p>July 2017 - June 2020</p>
+            </div>
+            <p>Full Stack Developer</p>
+
+            <div className="my-5">
+              <h4 className="italic">Enterprise Analytics Dashboard</h4>
+              <ul>
+                <li className="list-inside list-disc">Assist U.S. Department of Defense in managing military assets</li>
+                <li className="list-inside list-disc">Build UI content in React and Angular</li>
+                <li className="list-inside list-disc">Construct custom data visualizations using D3.js</li>
+                <li className="list-inside list-disc">Develop Typescript (Node.js) microservices & deploy to AWS</li>
+                <li className="list-inside list-disc">Containerize using Docker</li>
+                <li className="list-inside list-disc">Implement MongoDB as the database mechanism</li>
+                <li className="list-inside list-disc">Operate within the Agile software development methodology</li>
+                <li className="list-inside list-disc">Manage sprint life cycle using Jira</li>
+              </ul>
+            </div>
+
+            <div className="my-5">
+              <h4 className="italic">Pennsylvania State Benefits Web Portal - eCIS</h4>
+              <ul>
+                <li className="list-inside list-disc">Maintain the web application managing state benefits for citizens of the commonwealth of Pennsylvania</li>
+                <li className="list-inside list-disc">Manage package compilations, file drops, & build deployments to INT, SAT, UAT, TFP, & PROD environments</li>
+                <li className="list-inside list-disc">Ensure environment uptime so testing is not impacted</li>
+                <li className="list-inside list-disc">Assist in E2E testing providing confidence toward daily deployments</li>
+                <li className="list-inside list-disc">Supervise builds from compilation to migration</li>
+                <li className="list-inside list-disc">Operate within the Waterfall software development methodology with six month deployment periods</li>
               </ul>
             </div>
           </section>

@@ -57,7 +57,7 @@ export default function Overlay(): ReactElement {
                 <div className="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
                   <div className="mt-3 relative flex-1 px-4 sm:px-6">
 
-                    <div className="shadow-md rounded-md p-5 mb-5">
+                    <section className="shadow-md rounded-md p-5 mb-5">
                       <h1 className="font-bold text-2xl mb-2">Profile</h1>
                       <div className="flex">
                         <p className="font-semibold mr-2">Name:</p>
@@ -71,16 +71,16 @@ export default function Overlay(): ReactElement {
                         <p className="font-semibold mr-2">Email:</p>
                         <p className="font-medium text-blue-600 hover:text-blue-400"><a href="mailto:vindevccm@gmail.com">vindevccm@gmail.com</a></p>
                       </div>
-                    </div>
+                    </section>
 
-                    <div className="shadow-md rounded-md p-5 mb-5">
+                    <section className="shadow-md rounded-md p-5 mb-5">
                       <h1 className="font-bold text-2xl mb-2">Professional Statement</h1>
                       <div className="flex">
                         <p className="font-medium text-gray-500">Detail oriented and highly adaptable professional with experience in the commercial and public sectors developing, testing, and deploying software. Ability to leverage full stack expertise to build responsive and user-centered applications and deliver high quality impact.</p>
                       </div>
-                    </div>
+                    </section>
 
-                    <div className="shadow-md rounded-md p-5 mb-5">
+                    <section className="shadow-md rounded-md p-5 mb-5">
                       <h1 className="font-bold text-2xl mb-2">Skills</h1>
                       <div className="flex-col my-3">
                         <p className="font-semibold mr-2">AWS</p>
@@ -126,9 +126,17 @@ export default function Overlay(): ReactElement {
                         <p className="font-semibold mr-2">Operating Systems</p>
                         <p className="font-medium text-gray-500">Windows, Ubuntu/Linux</p>
                       </div>
-                    </div>
+                    </section>
 
-                    <div className="shadow-md rounded-md p-5 mb-5">
+                    <section className="shadow-md rounded-md p-5 mb-5">
+                      <h1 className="font-bold text-2xl mb-2">Certifications</h1>
+                      <a className="flex-col cursor-pointer text-blue-600 hover:text-blue-400" target="_blank" href="https://www.credly.com/badges/951e681f-f3ab-404f-bd3a-dfd126cd267a?source=linked_in_profile" rel="noreferrer">
+                        <p className="font-semibold mr-2">AWS Developer Associate:</p>
+                        <p className="font-medium text-gray-500">Issued May 2021 - Expires May 2024</p>
+                      </a>
+                    </section>
+
+                    <section className="shadow-md rounded-md p-5 mb-5">
                       <h1 className="font-bold text-2xl mb-4">Follow Me</h1>
                       <div className="flex justify-around">
                         {/* TODO: add tooltips */}
@@ -145,7 +153,7 @@ export default function Overlay(): ReactElement {
                           <i className="fas fa-file-download fa-4x text-blue-600 hover:text-blue-400 transition-all" />
                         </a>
                       </div>
-                    </div>
+                    </section>
 
                   </div>
                 </div>
