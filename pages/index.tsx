@@ -145,6 +145,10 @@ export default function Home(): ReactElement {
               <p className="my-5">Et veritatis nihil expedita cumque quia praesentium consequatur debitis cupiditate, vitae architecto eaque, quis corporis harum blanditiis, consequuntur eligendi ut quos in aliquid labore modi? Aut eum ullam officia suscipit.</p>
               <p className="my-5">Suscipit quo, nostrum, error temporibus similique praesentium repudiandae incidunt a natus ratione sed ea, illo fuga distinctio voluptatem nemo rerum illum unde? Accusantium aperiam nulla voluptate, est nemo sequi voluptatum?</p>
             </section>
+            <section className="my-10">
+              <h1 className="my-5 text-gray-500 text-4xl">testing 123</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quae qui esse eligendi doloremque commodi dolorem officia repellat provident fugiat. Et, quis cumque maiores unde porro itaque beatae ut aliquam.</p>
+            </section>
           </div>
         </div>
       </div>
