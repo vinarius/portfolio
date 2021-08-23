@@ -81,7 +81,7 @@ export default function Navbar(): ReactElement {
                 </div>
               </div>
               <div
-                className="absolute right-0 flex items-center mr-5 sm:static sm:inset-auto p-1 cursor-pointer rounded-md text-lg text-white hover:bg-gray-700 transition-all"
+                className="absolute right-0 flex items-center sm:static sm:inset-auto p-1 cursor-pointer rounded-md text-lg text-white hover:bg-gray-700 transition-all"
                 onClick={handleOpenOverlay}
               >
                 <p className="mx-4">My Skills</p>
