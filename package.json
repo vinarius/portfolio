@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "start": "next dev",
     "build": "next build",
     "next": "next",
     "lint": "next lint",
-    "start": "next start",
+    "start:prod": "next start",
     "test": "jest --coverage --passWithNoTests"
   },
   "dependencies": {

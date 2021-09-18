@@ -1,0 +1,38 @@
+.custom-flash-white {
+  animation-name: flashWhite;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+}
+
+.custom-min-width {
+  min-width: 360px;
+}
+
+@keyframes flashWhite {
+  0% {
+    background-color: inherit;
+    color: #fff;
+  }
+
+  12.5% {
+    background-color: #fff;
+    color: #000;
+  }
+
+  25% {
+    background-color: inherit;
+    color: #fff;
+  }
+
+  37.5% {
+    background-color: #fff;
+    color: #000;
+  }
+
+  50% {
+    background-color: inherit;
+    color: #fff;
+  }
+}

@@ -5,6 +5,8 @@ import React, { ReactElement, useContext, useState } from 'react';
 import { STATEACTIONS } from '../context/stateActions';
 import { myContext } from '../context/stateProvider';
 
+import styles from './navbar.module.css';
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
@@ -12,19 +14,19 @@ function classNames(...classes: string[]) {
 export default function Navbar(): ReactElement {
   const { state, dispatch } = useContext(myContext);
   const { isOverlayOpen } = state;
+  const [hasClickedSkills, setHasClickedSkills] = useState(false);
 
   const [navigation, setNavigation] = useState([
-    { name: 'Experience', href: '#', current: true },
-    { name: 'Portfolio', href: '#', current: false },
-    { name: 'Contact Me', href: '#', current: false }
+    { name: 'Experience', href: '#experience', current: true },
+    { name: 'Portfolio', href: '#portfolio', current: false },
+    { name: 'Contact Me', href: '#contact-me', current: false }
   ]);
 
   const handleOpenOverlay = () => {
-    if (isOverlayOpen) {
-      dispatch({ type: STATEACTIONS.closeOverlay });
-    } else {
-      dispatch({ type: STATEACTIONS.openOverlay });
-    }
+    setHasClickedSkills(true);
+    dispatch({
+      type: isOverlayOpen ? STATEACTIONS.closeOverlay : STATEACTIONS.openOverlay
+    });
   };
 
   // TODO: update on scroll
@@ -38,8 +40,8 @@ export default function Navbar(): ReactElement {
   }
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
-      {({ open }) => (
+    <Disclosure as="nav" className={`bg-gray-800 fixed w-full h-16 ${styles['custom-min-width']}`}>
+      {({ open, close }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
@@ -70,7 +72,7 @@ export default function Navbar(): ReactElement {
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
-                        ) + 'transition-all'}
+                        ) + ' transition-all'}
                         aria-current={item.current ? 'page' : undefined}
                         onClick={() => setNavigationCurrent(index)}
                       >
@@ -81,7 +83,8 @@ export default function Navbar(): ReactElement {
                 </div>
               </div>
               <div
-                className="absolute right-0 flex items-center sm:static sm:inset-auto p-1 cursor-pointer rounded-md text-lg text-white hover:bg-gray-700 transition-all"
+                className={'absolute right-0 flex items-center sm:static sm:inset-auto p-1 cursor-pointer rounded-md text-lg text-white hover:bg-gray-700 transition-all ' +
+                (!hasClickedSkills && `${styles['custom-flash-white']}`)}
                 onClick={handleOpenOverlay}
               >
                 <p className="mx-4">My Skills</p>
@@ -95,7 +98,7 @@ export default function Navbar(): ReactElement {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-900">
               {navigation.map((item, index) => {
                 return <a
                   key={item.name}
@@ -105,7 +108,12 @@ export default function Navbar(): ReactElement {
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
-                  onClick={() => setNavigationCurrent(index)}
+                  onClick={() => {
+                    setNavigationCurrent(index);
+                    close();
+                    // const targetElement = document.getElementById(item.href.replace('#', ''));
+                    // window.scrollTo(0, (targetElement as HTMLE).scrollTop);
+                  }}
                 >
                   {item.name}
                 </a>;
