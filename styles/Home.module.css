@@ -1,0 +1,31 @@
+.custom-border-bottom {
+  border-bottom: 
+}
+
+.custom-hero-section {
+
+}
+
+@media screen and (max-width: 639px) {
+  .custom-hero-section {
+    background: url('/building-hero-img-sm.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .custom-hero-section {
+    background: url('/building-hero-img-md.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .custom-hero-section {
+    background: url('/building-hero-img-lg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,12 +1,21 @@
 import React, { ReactElement, useState } from 'react';
+import styles from '../styles/Home.module.css';
 
 export default function Home(): ReactElement {
   const [showMoreExperience, setShowMoreExperience] = useState(false);
 
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-col">
+      <div className={`${styles['custom-hero-section']} h-screen grid grid-cols-12 ${styles['custom-border-bottom']}`}>
+        <div className="col-start-5 col-span-7 sm:col-start-7 sm:col-span-5 lg:col-start-8 lg:col-span-4 flex items-center">
+          <div className="flex flex-col items-center justify-center">
+            <p className="m-3 w-full text-right">Hi, my name is Mark.</p>
+            <p className="m-3 w-full text-right">I like to code, drink coffee, play piano & guitar, & dream about tomorrow.</p>
+          </div>
+        </div>
+      </div>
       <div className="px-5 md:grid md:grid-cols-12">
-        <div className="md:col-start-2 md:col-span-10 lg:col-start-3 lg:col-span-8 xl:col-start-4 xl:col-span-6 2xl:col-start-4 2xl:col-span-6">
+        <div className="md:col-start-2 md:col-span-10">
           <section
             className="mt-10"
             id="experience"
@@ -152,11 +161,7 @@ export default function Home(): ReactElement {
             id="portfolio"
           >
             <h1 className="my-5 text-gray-500 text-4xl">Portfolio</h1>
-            <p className="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo libero quo ea laudantium velit rem dignissimos, voluptatum voluptatem deleniti, facere atque, odit neque laboriosam? Voluptatibus veniam illum harum nam accusantium!</p>
-            <p className="my-5">Unde quod, sequi explicabo ipsam odio voluptate earum repudiandae dignissimos. Blanditiis, animi! Qui fugiat placeat odit repellat accusamus sit tenetur, corporis numquam voluptatum molestias natus mollitia consectetur magnam, maxime cupiditate?</p>
-            <p className="my-5">Nam ratione eaque eveniet facilis ipsum voluptates porro obcaecati alias, totam dolore minima officiis vero eum unde quidem fugit ex, esse exercitationem earum? Modi quia nisi fugit eligendi, aliquam voluptate.</p>
-            <p className="my-5">Et veritatis nihil expedita cumque quia praesentium consequatur debitis cupiditate, vitae architecto eaque, quis corporis harum blanditiis, consequuntur eligendi ut quos in aliquid labore modi? Aut eum ullam officia suscipit.</p>
-            <p className="my-5">Suscipit quo, nostrum, error temporibus similique praesentium repudiandae incidunt a natus ratione sed ea, illo fuga distinctio voluptatem nemo rerum illum unde? Accusantium aperiam nulla voluptate, est nemo sequi voluptatum?</p>
+            
           </section>
           <section
             className="my-10"
