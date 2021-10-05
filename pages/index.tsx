@@ -161,18 +161,12 @@ export default function Home(): ReactElement {
             id="portfolio"
           >
             <h1 className="my-5 text-gray-500 text-4xl">Portfolio</h1>
-            
-          </section>
-          <section
-            className="my-10"
-            id="contact-me"
-          >
-            <h1 className="my-5 text-gray-500 text-4xl">Contact Me</h1>
-            <p className="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo libero quo ea laudantium velit rem dignissimos, voluptatum voluptatem deleniti, facere atque, odit neque laboriosam? Voluptatibus veniam illum harum nam accusantium!</p>
-            <p className="my-5">Unde quod, sequi explicabo ipsam odio voluptate earum repudiandae dignissimos. Blanditiis, animi! Qui fugiat placeat odit repellat accusamus sit tenetur, corporis numquam voluptatum molestias natus mollitia consectetur magnam, maxime cupiditate?</p>
-            <p className="my-5">Nam ratione eaque eveniet facilis ipsum voluptates porro obcaecati alias, totam dolore minima officiis vero eum unde quidem fugit ex, esse exercitationem earum? Modi quia nisi fugit eligendi, aliquam voluptate.</p>
-            <p className="my-5">Et veritatis nihil expedita cumque quia praesentium consequatur debitis cupiditate, vitae architecto eaque, quis corporis harum blanditiis, consequuntur eligendi ut quos in aliquid labore modi? Aut eum ullam officia suscipit.</p>
-            <p className="my-5">Suscipit quo, nostrum, error temporibus similique praesentium repudiandae incidunt a natus ratione sed ea, illo fuga distinctio voluptatem nemo rerum illum unde? Accusantium aperiam nulla voluptate, est nemo sequi voluptatum?</p>
+            <div className="flex flex-col items-center">
+              <div className="flex my-5">
+                <p className="shadow-md w-60 h-60 rounded mx-5">Dwellics</p>
+                <p className="shadow-md w-60 h-60 rounded mx-5">Drum Machine</p>
+              </div>
+            </div>
           </section>
         </div>
       </div>
