@@ -165,6 +165,7 @@ export default function Home(): ReactElement {
               <a
                 href="https://dwellics.com"
                 target="_blank"
+                rel="noreferrer"
               >
                 <div
                   className={`transition-all shadow-md border-2 w-48 h-48 rounded-lg ${styles['project']} ${styles['project-dwellics']}`}
