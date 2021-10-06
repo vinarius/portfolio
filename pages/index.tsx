@@ -160,12 +160,22 @@ export default function Home(): ReactElement {
             className="mt-10"
             id="portfolio"
           >
-            <h1 className="my-5 text-gray-500 text-4xl">Portfolio</h1>
-            <div className="flex flex-col items-center">
-              <div className="flex my-5">
-                <p className="shadow-md w-60 h-60 rounded mx-5">Dwellics</p>
-                <p className="shadow-md w-60 h-60 rounded mx-5">Drum Machine</p>
-              </div>
+            <h1 className="my-10 text-gray-500 text-4xl">Portfolio</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 place-items-center">
+              <a
+                href="https://dwellics.com"
+                target="_blank"
+              >
+                <div
+                  className={`transition-all shadow-md border-2 w-48 h-48 rounded-lg ${styles['project']} ${styles['project-dwellics']}`}
+                  id="dwellics"
+                >
+                </div>
+              </a>
+              <div
+                className={`shadow-md border-2 w-48 h-48 rounded-lg ${styles['project-drum-machine']}`}
+                id="drum-machine"
+              ></div>
             </div>
           </section>
         </div>

@@ -1,8 +1,19 @@
-.custom-border-bottom {
+.custom-border-bottom {}
+
+.custom-hero-section {}
+
+.project-drum-machine {
+  background: url('/drum-machine.PNG');
+  background-size: cover;
 }
 
-.custom-hero-section {
+.project-dwellics {
+  background: url('/dwellics.PNG');
+  background-size: cover;
+}
 
+.project:hover {
+  opacity: 75%;
 }
 
 @media screen and (max-width: 639px) {
